@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="style/style.css">
+    <title>Jogo da Memória</title>
+</head>
+<style>
+</style>
+<body>
+  <div class="congratulations">
+    <h2>Parabéns!!</h2>
+    <button class="new-game">Novo Jogo</button>
+  </div>
+  <div class="categoria">
+    <span class="btn-categoria">Mudar baralho</span>
+    <section class="categoria-menu">
+      <h3 class="categoria-title">Mudar baralho</h3>
+      <hr/>
+      <h4 class="categoria-sub">Mudar o baralho de cartas para:</h4>
+      <input type="radio" name="tipo" data-radio="TI" class="radio-categoria" checked> Imagens de T.I</br>
+      <input type="radio" name="tipo" data-radio="animais" class="radio-categoria"> Imagens de animais</br>
+      <input type="radio" name="tipo" data-radio="times" class="radio-categoria"> Imagens times de futebol</br>
+      <input type="radio" name="tipo" data-radio="carros" class="radio-categoria"> Imagens carros</br>
+      <input type="radio" name="tipo" data-radio="frutas" class="radio-categoria"> Imagens frutas</br>
+    </section>
+  </div>
+  <main>
+    <h1 class="title">jogo da memória</h1>			
+	  <div class="game-memory">
+    </div>
+  </main>
+  <script src="js/main.js"></script>
+</body>
+</html>
