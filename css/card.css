@@ -1,0 +1,48 @@
+.card{
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+	width: 172px;
+	height: 190px;
+	margin-top: 5px;
+	margin-left:8px; 
+	border-radius: 5px;
+	box-shadow: rgb(37, 37, 37) 2px 2px 5px;
+	transform: translateX(-800%);
+	border-radius: 5px;
+	cursor: pointer;
+    transition: transform 1s cubic-bezier(0, .40, .40, 1.21);
+}
+.card__img{
+    margin: auto;
+    width: 150px;
+    height: 150px;
+}
+.-animacao{
+	transform: translateX(0%)
+}
+.card__back, .card__front{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: inline-flex;
+}
+.card__front{
+    background: #6d2c7a;
+}
+.card__back{
+	background: rgb(223, 223, 223);
+    transform: rotateY(-180deg);
+}
+.card.-flip{
+	transition:transform 1s cubic-bezier(0, .40, .40, 1.21);
+	transform: rotateY(180deg);
+	animation: balaco .3s ;
+}
+@keyframes balaco{
+	from{
+		transform: rotate(360deg)
+	}
+	to{
+		transform: rotate(180deg) 
+	}
+}

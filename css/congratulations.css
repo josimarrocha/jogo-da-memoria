@@ -1,0 +1,39 @@
+.congratulations{
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.644);
+	z-index: 3;
+	text-align: center;
+	padding-top: 25%;
+	display: none;
+}
+.congratulations h2{
+	animation: parabens 2s cubic-bezier(0, 1.30, .60, 1.21);;
+	font-size: 4em;
+	color: aliceblue;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+}
+@keyframes parabens {
+	from{
+		transform: translateX(-200%);
+	}
+	to{
+		transform: translateX(-0%);
+	}
+}
+.congratulations button{
+	width: 200px;
+	height: 50px;
+	font-size: 1.4em;
+	font-weight: 600;
+	color: white;
+	text-transform: uppercase;
+	border: solid 1px white;
+	background: transparent;
+	cursor: pointer;
+}
+.congratulations button:hover{
+	background: rgba(221, 221, 221, 0.368);
+}
