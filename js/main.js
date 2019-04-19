@@ -1,5 +1,3 @@
-const xrh = new XMLHttpRequest()
-xrh.addEventListener('readystatechange')
 (function () {
 	'use strict'
 	const imgCard = [
@@ -14,9 +12,9 @@ xrh.addEventListener('readystatechange')
 		'svg9.svg'
 	]
 	const $game = document.querySelector('.game-memory')
-	const $btnCategoria = document.querySelector('.btn-categoria')
-	const $categoriaMenu = document.querySelector('.categoria-menu')
-	const $radioCategoria = document.querySelectorAll('.radio-categoria')
+	const $btnCategoria = document.querySelector('.categoria--btn')
+	const $categoriaMenu = document.querySelector('.categoria__menu')
+	const $radioCategoria = document.querySelectorAll('.categoria--radio')
 	const $congratulations = document.querySelector('.congratulations')
 	const countPares = []
 	$btnCategoria.addEventListener('click', openMenuCategoria)

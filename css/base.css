@@ -8,3 +8,11 @@ body{
 	background: rgba(109, 109, 109, 0.473);
 	overflow-x: hidden;
 }
+.title{
+	width: 100%;
+	text-align: center;
+	font-size: 2.5em;
+	text-transform: uppercase;
+	letter-spacing: 1.8px;
+	color: #333233
+}

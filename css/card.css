@@ -1,3 +1,9 @@
+.game-memory{
+    width: 1109px;
+	margin: 0 0 0 20px;
+	display: flex;
+	flex-wrap: wrap;
+}
 .card{
 	transform-style: preserve-3d;
 	backface-visibility: hidden;
