@@ -16,6 +16,7 @@
 	const $categoriaMenu = document.querySelector('.categoria__menu')
 	const $radioCategoria = document.querySelectorAll('.categoria--radio')
 	const $congratulations = document.querySelector('.congratulations')
+	const $btnNewgame = document.querySelector('.new-game')
 	const countPares = []
 	$btnCategoria.addEventListener('click', openMenuCategoria)
 
@@ -106,6 +107,13 @@
 			firstCart = '';
 			secondCart = '';
 		}	
+
+		$btnNewgame.addEventListener('click', newGame)
+		function newGame(){
+			$congratulations.style.display = 'none'
+			$game.innerHTML = ''
+			app('TI')
+		}
 		spreadCards()
 	}
 	app('TI')
